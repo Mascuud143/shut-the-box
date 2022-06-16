@@ -183,6 +183,9 @@ function closeModal() {
 function openModal() {
   EditPlayersModal.classList.remove("hidden");
   backdrop.classList.remove("hidden");
+  //populate the players
+  document.querySelector("#player1").value = playerOne;
+  document.querySelector("#player2").value = playerTwo;
 }
 
 window.addEventListener("keydown", function (event) {
